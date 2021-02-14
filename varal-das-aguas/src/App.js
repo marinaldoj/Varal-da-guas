@@ -1,8 +1,11 @@
 import React from 'react';
 
+import './global.css'
+import HomePage from './pages/HomePage';
+
 function App() {
   return (
-    <h1>""</h1>
+    <HomePage />    
   );
 }
 

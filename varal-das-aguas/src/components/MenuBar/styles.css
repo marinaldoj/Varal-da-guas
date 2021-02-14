@@ -1,0 +1,17 @@
+.menu-bar{
+    background: #1b546f;
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+}
+
+/* li {
+    display: inline;
+    text-align: center;
+    color: #21779c;
+    margin: 0 20px;
+}
+
+li:hover{
+    background: #ffffff;
+} */
