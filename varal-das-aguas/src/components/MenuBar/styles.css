@@ -5,13 +5,21 @@
     padding: 0 80px;
 }
 
-/* li {
-    display: inline;
-    text-align: center;
-    color: #21779c;
-    margin: 0 20px;
+
+@media (max-width: 800px){
+    .menu-bar{
+        background: #1b546f;
+        display: flex;
+        align-items: center;
+        padding: 0 40px;
+    }
 }
 
-li:hover{
-    background: #ffffff;
-} */
+@media (max-width: 400px){
+    .menu-bar{
+        background: #1b546f;
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+}

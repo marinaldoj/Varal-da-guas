@@ -2,15 +2,28 @@
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     height: 40px;
-    padding: 0px 6px;
     background: #1b546f;
     border: none;
     transition: 0.2s;
     color: #21779c;
     margin: 0 6px;
+    padding: 0 6px;
 }
 
 .button-menu-bar:hover {
     background: #fff;
     color: #1b546f;
+}
+
+@media (max-width: 400px){
+    .button-menu-bar{
+        font-family: 'Lato', sans-serif;
+        font-size: 14px;
+        height: 40px;
+        background: #1b546f;
+        border: none;
+        transition: 0.2s;
+        color: #21779c;
+        padding: 0;
+    }
 }

@@ -1,10 +1,25 @@
 .home-body{
-    background: #ffffff;
-    border-radius: 2px;
     z-index: 2;
     position: absolute;
+    width: 100%;
+    top: 75vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+hr{
+    border: 1px solid #adadad;
+    opacity: 0.2;
+}
+
+.home-content{
+    background: #ffffff;
+    border-radius: 2px;
     width: 85%;
     top: 75vh;
+    padding: 40px 80px;
 }
 
 .logo{
@@ -24,4 +39,148 @@
 .logo-img{
     position: absolute;
     top: 100px;
+}
+
+.home-content{
+    padding: 40px;
+}
+
+.informations{
+    color: #4a4a4a;
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.contest{
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+}
+
+.contest-register{
+    width: 35%;
+    margin-top: -120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-register{
+    background: #1b546f;
+    border-radius: 2px;
+    padding: 40px;
+}
+
+.description-contest{
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 6px 0;
+    margin-bottom: 20px;
+}
+
+.title-contest{
+    font-size: 14px;
+    color: #21779c;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 800px){
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .ocean-img{
+        position: relative;
+        z-index: 0;
+        width: 100%;
+        height: 50vh;
+    }
+    
+    .logo-img{
+        position: absolute;
+        top: 100px;
+        width: 35%;
+    }
+
+    .home-body{
+        z-index: 2;
+        position: absolute;
+        width: 100%;
+        top: 50vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contest{
+        display: flex;
+        padding: 0 0 30px 0;
+        justify-content: space-between;
+    }
+
+    .contest-register{
+        width: 35%;
+        margin-top: -80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+@media (max-width: 400px){
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .ocean-img{
+        position: relative;
+        z-index: 0;
+        width: 100%;
+        height: 50vh;
+    }
+    
+    .logo-img{
+        position: absolute;
+        top: 100px;
+        width: 45%;
+    }
+
+    .home-body{
+        z-index: 2;
+        position: absolute;
+        width: 100%;
+        top: 50vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contest{
+        display: flex;
+        padding: 0 0 30px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contest-register{
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+    
 }

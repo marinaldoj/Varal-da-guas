@@ -1,0 +1,29 @@
+.button-register{
+    width: 80%;
+    padding: 8px;
+    background: #1b546f;
+    border-radius: 2px;
+    border: 1px solid #1b546f;
+    margin-top: 40px;
+    color: #ffffff;
+    transition: 0.2s;
+}
+
+.button-register:hover{
+    background: #ffffff;
+    color: #1b546f;    
+}
+
+@media (max-width:400px) {
+    .button-register{
+        width: 100%;
+        padding: 8px;
+        background: #1b546f;
+        border-radius: 2px;
+        border: 1px solid #1b546f;
+        margin-top: 40px;
+        color: #ffffff;
+        transition: 0.2s;
+    }
+
+}
