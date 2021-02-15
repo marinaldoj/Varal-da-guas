@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, FormEvent } from 'react';
 
 import './styles.css';
 import MenuBar from '../../components/MenuBar';
@@ -7,8 +7,13 @@ import oceanImg from '../../assets/ocean-sea-pacific.png'
 import nameLogo from '../../assets/logo.png'
 import Footer from '../../components/Footer';
 import Button from '../../components/Button';
+import Modal from '../../components/Modal';
+
 
 export default function HomePage(){
+
+    const [modaIsOpen, setIsOpen] = useState(false);
+
     return(
         <div className="home-menu">
             <MenuBar />
@@ -34,7 +39,11 @@ export default function HomePage(){
                                     <p className="title-contest">APRESENTAÇÃO</p>
                                     <p className="description-contest">20/03/2017 das 16:30h ás 17:30h.</p>
                                 </div>
-                                <Button title="FAÇA SUA INSCRIÇÃO" />
+                                <Button title="FAÇA SUA INSCRIÇÃO" onClick={() => (setIsOpen(true))} />
+                                <Modal
+                                    modaIsOpen={modaIsOpen}
+                                    modalIsClose={() => (setIsOpen(false))}
+                                />
                             </div>
                         </div>                        
                         <hr/>
